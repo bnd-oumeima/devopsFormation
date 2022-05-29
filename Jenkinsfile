@@ -9,7 +9,7 @@ pipeline {
             }
             steps {
                
-                sh 'flask run main.py' 
+                sh 'flask run' 
                 
             }
         }
