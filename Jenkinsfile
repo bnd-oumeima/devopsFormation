@@ -8,10 +8,7 @@ pipeline {
                 }
             }
             steps {
-                sh 'export FLASK_ENV=development'
-                sh 'export FLASK_APP=main.py'
-                sh 'flask run development' 
-                
+                sh 'FLASK_ENV=development FLASK_APP=main.py flask run'
             }
         }
     }
